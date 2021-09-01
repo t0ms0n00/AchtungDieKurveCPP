@@ -346,7 +346,7 @@ int main(int argc, char* argv[]){
         }
 
         screen.display();
-        sf::sleep(sf::milliseconds(1));
+        sf::sleep(sf::milliseconds(1000/60));
     }
 
     /// ending handle
