@@ -28,7 +28,7 @@ int main(int argc, char* argv[]){
     screen.setPosition(sf::Vector2i(150, 150));
 
     sf::Texture texture;
-    if(!texture.loadFromFile("bg.jpeg")){
+    if(!texture.loadFromFile("../img/bg.jpeg")){
         cout << "Cannot load background\n";
         exit(1);
     }
@@ -38,7 +38,7 @@ int main(int argc, char* argv[]){
     screen.draw(background);
 
     sf::Font font;
-    if (!font.loadFromFile("arial_unicode_ms/ArialUnicodeMS.ttf")){
+    if (!font.loadFromFile("../arial_unicode_ms/ArialUnicodeMS.ttf")){
         cout << "Cannot load font\n";
         exit(1);
     }
@@ -346,7 +346,7 @@ int main(int argc, char* argv[]){
         }
 
         screen.display();
-        sf::sleep(sf::milliseconds(1));
+        sf::sleep(sf::milliseconds(1000/60));
     }
 
     /// ending handle
